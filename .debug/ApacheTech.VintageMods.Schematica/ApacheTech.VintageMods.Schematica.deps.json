@@ -1,0 +1,309 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "ApacheTech.VintageMods.Schematica/0.0.1": {
+        "dependencies": {
+          "ApacheTech.Common.DependencyInjection": "2.1.0",
+          "ApacheTech.Common.DependencyInjection.Abstractions": "2.1.0",
+          "ApacheTech.Common.Extensions": "2.0.0",
+          "ApacheTech.Common.Extensions.Harmony": "2.0.0",
+          "ApacheTech.VintageMods.FluentChatCommands": "2.0.1",
+          "IsExternalInit": "1.0.3",
+          "NETStandard.Library": "2.0.3",
+          "VintageStory.Gantry.Core": "0.3.1",
+          "VintageStory.Gantry.Core.DependencyInjection": "0.3.0",
+          "VintageStory.Gantry.Services.FileSystem": "0.3.0",
+          "VintageStory.Gantry.Services.FileSystem.DependencyInjection": "0.3.0",
+          "VintageStory.Gantry.Services.HarmonyPatches": "0.3.0",
+          "VintageStory.Gantry.Services.HarmonyPatches.DependencyInjection": "0.3.0",
+          "VintageStory.Gantry.Services.Network": "0.3.0",
+          "VintageStory.Gantry.Services.Network.DependencyInjection": "0.3.0"
+        },
+        "runtime": {
+          "ApacheTech.VintageMods.Schematica.dll": {}
+        }
+      },
+      "ApacheTech.Common.DependencyInjection/2.1.0": {
+        "dependencies": {
+          "ApacheTech.Common.DependencyInjection.Abstractions": "2.1.0",
+          "ApacheTech.Common.Extensions": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ApacheTech.Common.DependencyInjection.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "ApacheTech.Common.DependencyInjection.Abstractions/2.1.0": {
+        "dependencies": {
+          "ApacheTech.Common.Extensions": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ApacheTech.Common.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "ApacheTech.Common.Extensions/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/ApacheTech.Common.Extensions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "ApacheTech.Common.Extensions.Harmony/2.0.0": {
+        "dependencies": {
+          "ApacheTech.Common.Extensions": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ApacheTech.Common.Extensions.Harmony.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "ApacheTech.VintageMods.FluentChatCommands/2.0.1": {
+        "dependencies": {
+          "ApacheTech.Common.Extensions.Harmony": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ApacheTech.VintageMods.FluentChatCommands.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "IsExternalInit/1.0.3": {},
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "VintageStory.Gantry.Core/0.3.1": {
+        "dependencies": {
+          "ApacheTech.Common.Extensions": "2.0.0",
+          "ApacheTech.Common.Extensions.Harmony": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gantry.Core.dll": {
+            "assemblyVersion": "0.3.1.0",
+            "fileVersion": "0.3.1.0"
+          }
+        }
+      },
+      "VintageStory.Gantry.Core.DependencyInjection/0.3.0": {
+        "dependencies": {
+          "ApacheTech.Common.DependencyInjection": "2.1.0",
+          "VintageStory.Gantry.Core": "0.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gantry.Core.DependencyInjection.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        }
+      },
+      "VintageStory.Gantry.Services.FileSystem/0.3.0": {
+        "dependencies": {
+          "VintageStory.Gantry.Core": "0.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gantry.Services.FileSystem.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        }
+      },
+      "VintageStory.Gantry.Services.FileSystem.DependencyInjection/0.3.0": {
+        "dependencies": {
+          "VintageStory.Gantry.Core": "0.3.1",
+          "VintageStory.Gantry.Core.DependencyInjection": "0.3.0",
+          "VintageStory.Gantry.Services.FileSystem": "0.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gantry.Services.FileSystem.DependencyInjection.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        }
+      },
+      "VintageStory.Gantry.Services.HarmonyPatches/0.3.0": {
+        "dependencies": {
+          "VintageStory.Gantry.Core": "0.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gantry.Services.HarmonyPatches.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        }
+      },
+      "VintageStory.Gantry.Services.HarmonyPatches.DependencyInjection/0.3.0": {
+        "dependencies": {
+          "VintageStory.Gantry.Core": "0.3.1",
+          "VintageStory.Gantry.Core.DependencyInjection": "0.3.0",
+          "VintageStory.Gantry.Services.HarmonyPatches": "0.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gantry.Services.HarmonyPatches.DependencyInjection.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        }
+      },
+      "VintageStory.Gantry.Services.Network/0.3.0": {
+        "dependencies": {
+          "VintageStory.Gantry.Core": "0.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gantry.Services.Network.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        }
+      },
+      "VintageStory.Gantry.Services.Network.DependencyInjection/0.3.0": {
+        "dependencies": {
+          "VintageStory.Gantry.Core": "0.3.1",
+          "VintageStory.Gantry.Core.DependencyInjection": "0.3.0",
+          "VintageStory.Gantry.Services.Network": "0.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gantry.Services.Network.DependencyInjection.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ApacheTech.VintageMods.Schematica/0.0.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApacheTech.Common.DependencyInjection/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kKk3g0Xy5a0KXqXWeWTXGJ5//5YtQoXji+XEHR+dxSOEJNWTc1ap5mCwJdsGWGe0D76I6RIKSSVNosB6GNEsyA==",
+      "path": "apachetech.common.dependencyinjection/2.1.0",
+      "hashPath": "apachetech.common.dependencyinjection.2.1.0.nupkg.sha512"
+    },
+    "ApacheTech.Common.DependencyInjection.Abstractions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9Yb1AGH51zEvXLVoejq0zmI3zquBeoivCCxa9bobsv0YSCgHXkH1gj9hfvtXc7ff+LjaqdAse9IfWFDsC56Gyg==",
+      "path": "apachetech.common.dependencyinjection.abstractions/2.1.0",
+      "hashPath": "apachetech.common.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    },
+    "ApacheTech.Common.Extensions/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mARhPXBg+n3yNw5TeLkdhEqpKdHTU5L4kyLrhzabHO21eP5w4LW7WO2VyACZbMxX6+MTDAVg6UQZ/yD4iOLS9g==",
+      "path": "apachetech.common.extensions/2.0.0",
+      "hashPath": "apachetech.common.extensions.2.0.0.nupkg.sha512"
+    },
+    "ApacheTech.Common.Extensions.Harmony/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7ch0I/2KntVFoBtJOC9nghhWl8J5jQDQ/7DNwcEwjXFfO6Zwi+TRx6btwhTp2d5W8DKik8cjAp2sBxllBLe45Q==",
+      "path": "apachetech.common.extensions.harmony/2.0.0",
+      "hashPath": "apachetech.common.extensions.harmony.2.0.0.nupkg.sha512"
+    },
+    "ApacheTech.VintageMods.FluentChatCommands/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9CZ4RwrlEJIO0tA7BiE+ZEXeQ9sRbWlvERr0cchn5GGx4w5w8E3UupxE0jp0MlOhMPWIVlfYMlKvcjV+jj/ieg==",
+      "path": "apachetech.vintagemods.fluentchatcommands/2.0.1",
+      "hashPath": "apachetech.vintagemods.fluentchatcommands.2.0.1.nupkg.sha512"
+    },
+    "IsExternalInit/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jcdN7vpDwjnV7U9KGCv/oNIWHJ/RIbyrpVsLQL2qbj6Cbi5U3iafKsaMn1rP+qCbkLbkB0v6oAwbVEkqrUnlyg==",
+      "path": "isexternalinit/1.0.3",
+      "hashPath": "isexternalinit.1.0.3.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "VintageStory.Gantry.Core/0.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vn9CD1LzxmluVXoSzfa+HxRTa6ESOJQTKGs3VqNe+zUjBr6QpYZ68HHhUq+hg/1WGGbkqQek1vhFzPYg2WjEmw==",
+      "path": "vintagestory.gantry.core/0.3.1",
+      "hashPath": "vintagestory.gantry.core.0.3.1.nupkg.sha512"
+    },
+    "VintageStory.Gantry.Core.DependencyInjection/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Uzx3SyOocuRXC5Ht6KGxmD0YUjgQ/fhXTXuSGkPt071Y5OXtM92IH8iz6j7A2L1YvwZYb1mPAtYgEGOMLsb68w==",
+      "path": "vintagestory.gantry.core.dependencyinjection/0.3.0",
+      "hashPath": "vintagestory.gantry.core.dependencyinjection.0.3.0.nupkg.sha512"
+    },
+    "VintageStory.Gantry.Services.FileSystem/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CSW0jsQbif20y0ekQUoL3ZXuVkI23g96r/YQ/zCUGEd/Gmcn1xuKPQsSjmrngeigUCti1Byai9MMxjzzHQrlxA==",
+      "path": "vintagestory.gantry.services.filesystem/0.3.0",
+      "hashPath": "vintagestory.gantry.services.filesystem.0.3.0.nupkg.sha512"
+    },
+    "VintageStory.Gantry.Services.FileSystem.DependencyInjection/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dct3HFMJL6t7erYNrEpyjLKYHSUpT0baRNaa8q3IjCY/Ze7/VcVoETpOuBaZtMdY1L4en+YWjwkbB7VweveZsw==",
+      "path": "vintagestory.gantry.services.filesystem.dependencyinjection/0.3.0",
+      "hashPath": "vintagestory.gantry.services.filesystem.dependencyinjection.0.3.0.nupkg.sha512"
+    },
+    "VintageStory.Gantry.Services.HarmonyPatches/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Kt5jcUeiZ6r+DMW9FVdiTI1m0aTplcXrPyiZZKyyjQS1XE/zrtCmQxFOO4krthxGHhdVGREbJZmdjeEKq6JyJQ==",
+      "path": "vintagestory.gantry.services.harmonypatches/0.3.0",
+      "hashPath": "vintagestory.gantry.services.harmonypatches.0.3.0.nupkg.sha512"
+    },
+    "VintageStory.Gantry.Services.HarmonyPatches.DependencyInjection/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sdEpf8ka+AaZ7Zj+s2KztUPmvZkLosncZ7uTCCSE0Fgc01VOS2ja6O1tTXf5jGIqUbGLtBuWBVsEGXydhTDsBw==",
+      "path": "vintagestory.gantry.services.harmonypatches.dependencyinjection/0.3.0",
+      "hashPath": "vintagestory.gantry.services.harmonypatches.dependencyinjection.0.3.0.nupkg.sha512"
+    },
+    "VintageStory.Gantry.Services.Network/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F3aqnHaPp7dcTpdd3Y5/T/jQww7OAB5SgM56MzO8YKLgU5WwpFTBzWnXcGXWexxE7cZRk65KyA5FaCQ5t2jKNQ==",
+      "path": "vintagestory.gantry.services.network/0.3.0",
+      "hashPath": "vintagestory.gantry.services.network.0.3.0.nupkg.sha512"
+    },
+    "VintageStory.Gantry.Services.Network.DependencyInjection/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1+koxVD6MwefVkLZZSV+e8gI9FqlGt8rLkPbtvKZJWzAdrRTqNnpY6TAns8LHcyT4JGH4C7H7GA8KCtBeNLDwg==",
+      "path": "vintagestory.gantry.services.network.dependencyinjection/0.3.0",
+      "hashPath": "vintagestory.gantry.services.network.dependencyinjection.0.3.0.nupkg.sha512"
+    }
+  }
+}

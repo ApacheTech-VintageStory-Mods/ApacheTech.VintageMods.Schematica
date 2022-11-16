@@ -1,0 +1,34 @@
+{
+  "ModTitle": "Schematica",
+  "ModDescription": "A mod that allows you to display a hologram, loaded from a schematic file, for easier rebuilding. You can also save your creations to schematic files and share them.",
+
+  "Features.AccessibilityHub.Dialogue.Support": "Support The Mod Author",
+  "Features.Support.Dialogue.Patreon": "Join my Patreon",
+  "Features.Support.Dialogue.Donate": "Donate via PayPal",
+  "Features.Support.Dialogue.Coffee": "Buy me a Coffee",
+  "Features.Support.Dialogue.Twitch": "Subscribe on Twitch.tv",
+  "Features.Support.Dialogue.YouTube": "Subscribe on YouTube",
+  "Features.Support.Dialogue.WishList": "Amazon WishList",
+  "Features.Support.Dialogue.Website": "Visit my Website",
+  "Features.Support.Dialogue.Back": "Back",
+
+  "Features.FileManager.Dialogue.Metadata.Title": "Schematic Info",
+  "Features.FileManager.Dialogue.Metadata.UntitledSchematic": "Untitled",
+  "Features.FileManager.Dialogue.Metadata.CreatedDate": "Created: {0}",
+  "Features.FileManager.Dialogue.Metadata.btnSave.Text": "Save",
+  "Features.FileManager.Dialogue.Metadata.lblTitle.Text": "Title:",
+  "Features.FileManager.Dialogue.Metadata.lblTitle.HoverText": "The title to give to the schematic.",
+  "Features.FileManager.Dialogue.Metadata.lblAuthor.Text": "Author:",
+  "Features.FileManager.Dialogue.Metadata.lblAuthor.HoverText": "The creator of the schematic.",
+  "Features.FileManager.Dialogue.Metadata.lblDescription.Text": "Description:",
+  "Features.FileManager.Dialogue.Metadata.lblDescription.HoverText": "A brief description of what the schematic represents.",
+  "Features.FileManager.Dialogue.Metadata.lblFilename.Text": "File Name:",
+  "Features.FileManager.Dialogue.Metadata.lblFilename.HoverText": "The name to give to the schematic file.",
+
+  "Features.FileManager.Dialogue.Load.Title": "Load Schematic",
+  "Features.FileManager.Dialogue.Load.OpenSchematicsFolder": "Open Schematics Folder",
+  "Features.FileManager.Dialogue.Load.LoadSelectedSchematic": "Load Selected Schematic",
+  "Features.FileManager.Dialogue.Load.AuthorText": "Author: {0}",
+  "Features.FileManager.Dialogue.Load.DescriptionText": "Description: {0}",
+  "Features.FileManager.Dialogue.Load.CreatedText": "Created: {0}"
+}

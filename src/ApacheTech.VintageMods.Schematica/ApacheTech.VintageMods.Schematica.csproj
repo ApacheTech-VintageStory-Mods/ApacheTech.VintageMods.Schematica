@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<VersionPrefix>0.0.1</VersionPrefix>
+		<VersionSuffix></VersionSuffix>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="ApacheTech.VintageMods.Schematica.saproj">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ApacheTech.Common.DependencyInjection" Version="2.1.0" />
+		<PackageReference Include="ApacheTech.Common.DependencyInjection.Abstractions" Version="2.1.0" />
+		<PackageReference Include="ApacheTech.Common.Extensions" Version="2.0.0" />
+		<PackageReference Include="ApacheTech.Common.Extensions.Harmony" Version="2.0.0" />
+		<PackageReference Include="ApacheTech.VintageMods.FluentChatCommands" Version="2.0.1" />
+		<PackageReference Include="IsExternalInit" Version="1.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="VintageStory.Gantry.Core" Version="0.3.1" />
+		<PackageReference Include="VintageStory.Gantry.Core.DependencyInjection" Version="0.3.0" />
+		<PackageReference Include="VintageStory.Gantry.Services.FileSystem" Version="0.3.0" />
+		<PackageReference Include="VintageStory.Gantry.Services.FileSystem.DependencyInjection" Version="0.3.0" />
+		<PackageReference Include="VintageStory.Gantry.Services.HarmonyPatches" Version="0.3.0" />
+		<PackageReference Include="VintageStory.Gantry.Services.HarmonyPatches.DependencyInjection" Version="0.3.0" />
+		<PackageReference Include="VintageStory.Gantry.Services.Network" Version="0.3.0" />
+		<PackageReference Include="VintageStory.Gantry.Services.Network.DependencyInjection" Version="0.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Extensions\" />
+	  <Folder Include="Features\Materials\" />
+	  <Folder Include="_Includes\assets\schematica\shaders\" />
+	</ItemGroup>
+
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+	  <Exec Command=":: Clean the target directory. ::&#xD;&#xA;del /f /s /q $(TargetDir) &gt; NUL&#xD;&#xA;rmdir /s /q $(TargetDir)&#xD;&#xA;&#xD;&#xA;:: Clean output directories. ::&#xD;&#xA;del /f /s /q $(SolutionDir).debug\$(ProjectName) &gt; NUL&#xD;&#xA;rmdir /s /q $(SolutionDir).debug\$(ProjectName) &gt; NUL&#xD;&#xA;del /f /s /q $(SolutionDir).releases\ &gt; NUL&#xD;&#xA;rmdir /s /q $(SolutionDir).releases\ &gt; NUL&#xD;&#xA;&#xD;&#xA;:: Rebuild necessary folders. ::&#xD;&#xA;if not exist $(SolutionDir).debug\$(ProjectName)\ mkdir $(SolutionDir).debug\$(ProjectName)\&#xD;&#xA;if not exist $(SolutionDir).releases\ mkdir $(SolutionDir).releases\" />
+	</Target>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="if $(Configuration) == Debug (&#xD;&#xA;&#xD;&#xA;:: Generator Mod Info file. ::&#xD;&#xA;cd &quot;$(ModInfoGeneratorDir)&quot;&#xD;&#xA;&quot;$(ModInfoGeneratorPath)&quot; -a &quot;$(TargetPath)&quot; -o $(TargetDir)&#xD;&#xA;&#xD;&#xA;:: Copy all other relevant files to target directory. ::&#xD;&#xA;xcopy &quot;$(TargetDir)&quot; &quot;$(SolutionDir).debug\$(ProjectName)&quot; /y /e /c /q&#xD;&#xA;xcopy &quot;$(ProjectDir)_Includes\&quot; &quot;$(SolutionDir).debug\$(ProjectName)&quot; /y /e /c /q&#xD;&#xA;FOR /D %25%25G IN ($(ProjectDir)Features\**) DO (&#xD;&#xA;    if exist &quot;%25%25G\_Includes\&quot; xcopy &quot;%25%25G\_Includes\&quot; &quot;$(SolutionDir).debug\$(ProjectName)&quot; /y /e /c /q&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;if $(Configuration) == Package (&#xD;&#xA;&#xD;&#xA;:: Copy all other relevant files to target directory. ::&#xD;&#xA;xcopy &quot;$(ProjectDir)_Includes\&quot; &quot;$(TargetDir)_Includes\&quot; /y /e /c /q&#xD;&#xA;FOR /D %25%25G IN ($(ProjectDir)Features\**) DO (&#xD;&#xA;    if exist &quot;%25%25G\_Includes\&quot; xcopy &quot;%25%25G\_Includes\&quot; &quot;$(TargetDir)_Includes\&quot; /y /e /c /q&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;:: Package the mod. ::&#xD;&#xA;cd &quot;$(ModPackagerDir)&quot;&#xD;&#xA;&quot;$(ModPackagerPath)&quot; -a &quot;$(TargetPath)&quot;&#xD;&#xA;&#xD;&#xA;:: Copy mod package to releases directory. ::&#xD;&#xA;copy /y &quot;$(TargetDir)release\*.zip&quot; &quot;$(SolutionDir).releases&quot;&#xD;&#xA;&#xD;&#xA;)" />
+	</Target>
+
+</Project>

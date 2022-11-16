@@ -1,0 +1,109 @@
+﻿<Project>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>11</LangVersion>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<OutputType>Library</OutputType>
+		<RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+		<Configurations>Debug;Release;Package</Configurations>
+		<!-- Environment Variable not recongised by Visual Studio Analysers. -->
+		<!-- ReSharper disable once UnknownProperty -->
+		<EnvironmentVariable>$(VINTAGE_STORY)</EnvironmentVariable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectCapability Include="DynamicDependentFile" />
+		<ProjectCapability Include="DynamicFileNesting" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="$(ProjectName).Tests.Unit" />
+		<InternalsVisibleTo Include="$(ProjectName).Tests.Acceptance" />
+		<InternalsVisibleTo Include="$(ProjectName).Tests.Benchmarks" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Vintage Story Game Libraries -->
+		<Reference Include="Vintagestory">
+			<HintPath>$(EnvironmentVariable)\Vintagestory.exe</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="VintagestoryAPI">
+			<HintPath>$(EnvironmentVariable)\VintagestoryAPI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="VintagestoryLib">
+			<HintPath>$(EnvironmentVariable)\VintagestoryLib.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="VSCreativeMod">
+			<HintPath>$(EnvironmentVariable)\Mods\VSCreativeMod.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="VSSurvivalMod">
+			<HintPath>$(EnvironmentVariable)\Mods\VSSurvivalMod.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="VSEssentials">
+			<HintPath>$(EnvironmentVariable)\Mods\VSEssentials.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<!-- Vintage Story Included Libraries -->
+		<Reference Include="0Harmony">
+			<HintPath>$(EnvironmentVariable)\Lib\0Harmony.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="AnimatedGif">
+			<HintPath>$(EnvironmentVariable)\Lib\AnimatedGif.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="cairo-sharp">
+			<HintPath>$(EnvironmentVariable)\Lib\cairo-sharp.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(EnvironmentVariable)\Lib\Newtonsoft.Json.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="OpenTK">
+			<HintPath>$(EnvironmentVariable)\Lib\OpenTK.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="protobuf-net">
+			<HintPath>$(EnvironmentVariable)\Lib\protobuf-net.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="System.Data.SQLite">
+			<HintPath>$(EnvironmentVariable)\Lib\System.Data.SQLite.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Tavis.JsonPatch">
+			<HintPath>$(EnvironmentVariable)\Lib\Tavis.JsonPatch.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<ModPackagerDir>C:\Users\Apache\source\repos\.tools\packager\</ModPackagerDir>
+		<ModPackagerName>ModPackager.exe</ModPackagerName>
+		<ModPackagerPath>$(ModPackagerDir)$(ModPackagerName)</ModPackagerPath>
+
+		<ModInfoGeneratorDir>C:\Users\Apache\source\repos\.tools\mig\</ModInfoGeneratorDir>
+		<ModInfoGeneratorName>mig.exe</ModInfoGeneratorName>
+		<ModInfoGeneratorPath>$(ModInfoGeneratorDir)$(ModInfoGeneratorName)</ModInfoGeneratorPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Package|AnyCPU'">
+		<DefineConstants>TRACE</DefineConstants>
+		<Optimize>true</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>C:\Users\Apache\source\repos\ApacheTech.VintageMods.AccessibilityTweaks\ApacheTech.VintageMods.AccessibilityTweaks\ApacheTech.VintageMods.AccessibilityTweaks.xml</DocumentationFile>
+		<GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+		<DebugType>embedded</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+</Project>
